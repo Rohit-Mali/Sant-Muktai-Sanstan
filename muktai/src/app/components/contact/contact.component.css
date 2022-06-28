@@ -20,7 +20,7 @@
 }
 
 .cards {
-    padding: 10px;
+    padding: 50px;
     height: 50%;
     /* background-color: grey; */
     display: flex;
@@ -52,7 +52,8 @@
 
 .card2 img {
     align-items: center;
-    height: 60px;
+    height: 100px;
+    width: 100px;
 }
 
 .card2 h1 {
@@ -61,8 +62,8 @@
 
 .card2 button {
     margin-top: 60px;
-    color: brown;
-    border-color: brown;
+    color: rgb(221, 82, 72);
+    border-color: rgb(221, 82, 72);
     background-color: transparent;
 }
 
@@ -75,7 +76,8 @@
 
 .card3 img {
     align-items: center;
-    height: 60px;
+    height: 100px;
+    width: 100px;
 }
 
 .card3 h1 {
@@ -84,7 +86,7 @@
 
 .card3 button {
     margin-top: 60px;
-    color: brown;
-    border-color: brown;
+    color: rgb(221, 82, 72);
+    border-color: rgb(221, 82, 72);
     background-color: transparent;
 }
