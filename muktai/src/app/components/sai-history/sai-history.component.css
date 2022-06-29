@@ -1,0 +1,201 @@
+/* Component Needs */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+.pc-tab>input,
+.pc-tab section>div {
+    display: none;
+}
+
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3,
+#tab4:checked~section .tab4,
+#tab5:checked~section .tab5,
+#tab6:checked~section .tab6,
+#tab7:checked~section .tab7 {
+    display: block;
+}
+
+#tab1:checked~nav .tab1,
+#tab2:checked~nav .tab2,
+#tab3:checked~nav .tab3,
+#tab4:checked~nav .tab4,
+#tab5:checked~nav .tab5,
+#tab6:checked~nav .tab6,
+#tab7:checked~nav .tab7 {
+    color: red;
+}
+
+/* Visual Styles */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #ecf0f1;
+    font-family: "Raleway";
+}
+
+.pc-tab {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.pc-tab ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc-tab ul li label {
+    font-family: "Raleway";
+    float: left;
+    padding: 20px 25px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    background: #eeeeee;
+    color: #444;
+}
+
+.pc-tab ul li label:hover {
+    background: #eeeeee;
+    ;
+}
+
+.pc-tab ul li label:active {
+    background: linear-gradient(#fe7700, #ef4805);
+}
+
+.pc-tab ul li:not(:last-child) label {
+    border-right-width: 0;
+}
+
+.pc-tab section {
+    font-family: "Droid Serif";
+    clear: both;
+}
+
+.pc-tab section div {
+    padding: 20px;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+    background: #fff;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+    color: #444;
+}
+
+.pc-tab section div h2 {
+    margin: 0;
+    font-family: "Raleway";
+    letter-spacing: 1px;
+    color: #34495e;
+}
+
+#tab1:checked~nav .tab1 label,
+#tab2:checked~nav .tab2 label,
+#tab3:checked~nav .tab3 label,
+#tab4:checked~nav .tab4 label,
+#tab5:checked~nav .tab5 label,
+#tab6:checked~nav .tab6 label,
+#tab7:checked~nav .tab7 label {
+    background: linear-gradient(#fe7700, #ef4805);
+    color: white;
+    position: relative;
+    z-index: 99999;
+}
+
+#tab1:checked~nav .tab1 label:after,
+#tab2:checked~nav .tab2 label:after,
+#tab3:checked~nav .tab3 label:after,
+#tab4:checked~nav .tab4 label:after,
+#tab5:checked~nav .tab5 label:after,
+#tab6:checked~nav .tab6 label:after,
+#tab7:checked~nav .tab7 label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(#fe7700, #ef4805);
+    left: 0;
+    bottom: -10px;
+    z-index: 2;
+
+}
+
+.description-container {
+    width: 900px;
+    margin: 40px auto 20px;
+}
+
+.description-container p {
+    text-align: justify;
+}
+
+
+.description-container .floating-image {
+    max-width: 400px;
+}
+
+.description-container .floating-image.right {
+    float: right;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.description-container {
+    width: 900px;
+    margin: 40px auto 20px;
+}
+
+.description-container .floating-image {
+    max-width: 4oopx;
+}
+
+.description-container .floating-image.left {
+    float: left;
+    margin-right: 35px;
+}
+
+.row{
+    display: flex;
+}
+
+.alt-block__image img {
+    width: 60%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+ .alt-block:nth-child(even) .alt-block__one img {
+    float: right;
+    text-align: right;
+    padding-right: 0;
+    padding-left: 40px;
+}
+.alt-block:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.alt-block {
+    padding: 35px 40px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
