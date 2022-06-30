@@ -38,7 +38,7 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    background: #ecf0f1;
+    /* background: #ecf0f1; */
     font-family: "Raleway";
 }
 
@@ -109,7 +109,6 @@ body {
     background: linear-gradient(#fe7700, #ef4805);
     color: white;
     position: relative;
-    z-index: 99999;
 }
 
 #tab1:checked~nav .tab1 label:after,
@@ -122,12 +121,15 @@ body {
     content: "";
     display: block;
     position: absolute;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(#fe7700, #ef4805);
-    left: 0;
-    bottom: -10px;
-    z-index: 2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-color: #ef4805 transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 
 }
 
